@@ -96,7 +96,11 @@ public:
         printPostOrder();
     }
   }
-  
+ 
+  void printPreOrder() const {
+    if (root == NULL) cout << "The BST is empty.\n";
+    else printhelp(root, 0);
+  }
 };
 
 // Visit -- prints out root
